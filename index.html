@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <main>
+          <section>
+                <div class="cards">
+                    <div class="card-img">
+                          <div class="card-front">
+                              <img src="img/card-logo.svg" alt="Card Logo">
+                              <div class="card-footer">
+                                  <span class="number-card" id="number-card">0000 0000 0000 0000</span>
+                                  <div class="name-date-card">
+                                      <span class="name-card" id="name-card">Jane Appleseed</span>
+                                      <div class="date-card">
+                                        <span class="mm-card" id="mm-card">00</span><span>/</span><span class="yy-card" id="yy-card">00</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card-back">
+                              <span id="card-cvc">000</span>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="card-form">
+                    <form id="form">
+                        <div class="form-control">
+                            <label>Cardholder name</label>
+                            <input type="text" placeholder="e.g. Jane Applessed" id="cardholder">
+                            <small>Error message</small>
+                        </div>
+                        
+                        <div class="form-control">
+                            <label>Card number</label>
+                            <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card-number" maxlength="19">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="date-cvc">
+                              <div class="date">
+                                    <label>Exp. date (mm/yy)</label>
+                                    <div class="date-mm-yy">
+                                        <div class="form-control">
+                                            <input type="text" placeholder="MM" id="month" maxlength="2">
+                                            <small>Error message</small>
+                                        </div>  
+                                        <div class="form-control">
+                                            <input type="text" placeholder="YY" id="year" maxlength="2">
+                                            <small>Error message</small>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                              </div>
+                              <div class="cvc">
+                                <div class="form-control">
+                                    <label>CVC</label>
+                                    <input type="text" placeholder="e.g. 123" id="cvc" maxlength="4">
+                                    <small>Error message</small>
+                              </div>
+                              </div>
+                             
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="success-message hide">
+                        <img src="img/icon-complete.svg" alt="icon complete">
+                        <div>
+                            <span class="thx-message">Thank you!</span>
+                            <span class="sub-message">We've added your card details</span>
+                        </div>
+                        <button type="submit" id="btn-continue">Continue</button>
+                    </div>
+                </div>
+          </section>
+    </main>
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lucian Iordache</a>.
+  </div> -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
